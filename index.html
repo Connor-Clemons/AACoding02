@@ -10,11 +10,21 @@
 <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
 <title>CodePen - AACoding04-2</title>
 <style>
-ul{
-  background:FFE002;
+ol{
+  background:#FFE002;
 }
+ul{
+  background:silver;
+}
+h2{background:red;
 
+}
+h1{background:#FFDB75;
 
+}
+h3{background:#FFDB75;
+
+}
 .correct{
   background:#C1FF33;
 }
@@ -25,8 +35,28 @@ ul{
 </style>
 </head>
 <body translate="no">
+<h3>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: #00b33c;
+}
+h1 {
+    background-color: #00b33c;
+}
+p {
+    background-color: #FFFFFF);
+}
+</style>
+</head>
+<body>
+</body>
+</html>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<button onClick="window.location.reload();">Reset Progress</button>
 <audio id="sad" controls>
 <source src="https://math.seattleacademy.org/garyanderson/snd/sad.mp3" type="audio/mpeg">
 </audio>
@@ -36,13 +66,15 @@ ul{
 \( \sqrt[3]{8} = 8^{\frac{1}{3}} = 2 \)
 </div>
 <h1>Some Pretty Neat Math Problems For Gary</h1>
-<h2> How to use quiz</h2>
+<h2><font color="white">how to use quiz</font> </h2>
+<ul>
 <li /> Assume all answers are positive.
 <li /> When writing exponents use ^
 <li /> Seperate terms and functions with a space.
 <li /> Example ax^b + c = +#
 <li /> If you get a question wrong refresh the page to try again.
 <li /> Write all answers as whole numbers or fully simplified, improper, fractions.
+</ul>
 <ol>
 <li>\( \sqrt[3]{8} + \sqrt[3]{27} \)
 <input data-correct="5" />
@@ -64,6 +96,7 @@ ul{
 <input data-correct="3/2">
 <li> \( 3^6 \)
 <input data-correct="729" < ol>
+</h3>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 <script id="rendered-js">
 const sad = document.getElementById("sad");
@@ -86,6 +119,7 @@ function onChange(evt) {
     $(this)
       .removeClass("incorrect")
       .addClass("correct");
+
   } else {
     $(this)
       .removeClass("correct")
